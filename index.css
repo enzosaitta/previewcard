@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  color: white;
+  font-family: "Lexend", sans-serif;
+}
+.card-conteiner {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 0 30px;
+  background-color: #10002b;
+}
+@media (min-width: 1200px) {
+  .card-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
+.card {
+  margin: 20px 0;
+  max-width: 350px;
+  height: 780px;
+  background-color: rgb(27, 25, 56);
+  border-radius: 10px;
+}
+@media (min-width: 1200px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    min-width: 1100px;
+    height: 440px;
+  }
+}
+.imagen {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+  opacity: 0.5;
+}
+@media (min-width: 1200px) {
+  .imagen {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0px;
+    opacity: 0.3;
+  }
+}
+.card-img-cont {
+  display: grid;
+  place-items: center;
+}
+@media (min-width: 1200px) {
+  .card-img-cont {
+    display: block;
+    justify-content: end;
+    width: 544px;
+    height: 440px;
+  }
+}
+.card-filter {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(170, 92, 219);
+}
+@media (min-width: 1200px) {
+  .card-filter {
+    border-radius: 0 10px 10px 0px;
+    margin-left: 35px;
+  }
+}
+
+.conten-card {
+  display: grid;
+  place-items: center;
+  margin: 10px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .conten-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+  }
+}
+.card-title {
+  font-weight: 700;
+  width: 245px;
+}
+@media (min-width: 1200px) {
+  .card-title {
+    font-size: 30px;
+    text-align: start;
+    width: 340px;
+  }
+}
+.txt-special {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-txt {
+  color: rgba(255, 255, 255, 0.749);
+  font-weight: 400;
+  width: 260px;
+}
+@media (min-width: 1200px) {
+  .card-txt {
+    text-align: start;
+    font-size: 15px;
+    width: 340px;
+  }
+}
+
+.content-results {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .content-results {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+}
+.results {
+  margin-top: 30px;
+}
+.results h2 {
+  font-weight: 700;
+  margin: 0px;
+}
+.results p {
+  font-weight: 300;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-top: 5px;
+}
